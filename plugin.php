@@ -12,14 +12,14 @@
  * Version: 0.0.1
  */
 
-namespace BreakdanceElementsByPhilKurth;
+namespace PdkBreakdanceElements;
 
 use function Breakdance\Util\getDirectoryPathRelativeToPluginFolder;
 
 add_action( 'breakdance_loaded', function () {
 	\Breakdance\ElementStudio\registerSaveLocation(
 		getDirectoryPathRelativeToPluginFolder( __DIR__ ) . '/elements',
-		'BreakdanceElementsByPhilKurth',
+		'PdkBreakdanceElements',
 		'element',
 		'Elements by Phil Kurth',
 		false
@@ -27,7 +27,7 @@ add_action( 'breakdance_loaded', function () {
 
 	\Breakdance\ElementStudio\registerSaveLocation(
 		getDirectoryPathRelativeToPluginFolder( __DIR__ ) . '/macros',
-		'BreakdanceElementsByPhilKurth',
+		'PdkBreakdanceElements',
 		'macro',
 		'Macros by Phil Kurth',
 		false,
@@ -35,7 +35,7 @@ add_action( 'breakdance_loaded', function () {
 
 	\Breakdance\ElementStudio\registerSaveLocation(
 		getDirectoryPathRelativeToPluginFolder( __DIR__ ) . '/presets',
-		'BreakdanceElementsByPhilKurth',
+		'PdkBreakdanceElements',
 		'preset',
 		'Presets by Phil Kurth',
 		false,
