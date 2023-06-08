@@ -21,7 +21,7 @@ add_action( 'breakdance_loaded', function () {
 		getDirectoryPathRelativeToPluginFolder( __DIR__ ) . '/elements',
 		'PdkBreakdanceCustomElements',
 		'element',
-		'Custom Elements',
+		'PDK Custom Elements',
 		false
 	);
 
@@ -29,7 +29,7 @@ add_action( 'breakdance_loaded', function () {
 		getDirectoryPathRelativeToPluginFolder( __DIR__ ) . '/macros',
 		'PdkBreakdanceCustomElements',
 		'macro',
-		'Custom Macros',
+		'PDK Custom Macros',
 		false,
 	);
 
@@ -37,7 +37,7 @@ add_action( 'breakdance_loaded', function () {
 		getDirectoryPathRelativeToPluginFolder( __DIR__ ) . '/presets',
 		'PdkBreakdanceCustomElements',
 		'preset',
-		'Custom Presets',
+		'PDK Custom Presets',
 		false,
 	);
 },
