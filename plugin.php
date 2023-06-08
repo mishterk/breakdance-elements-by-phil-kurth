@@ -1,43 +1,43 @@
 <?php
 
 /**
- * Plugin Name: PDK | Breakdance Custom Elements
- * Plugin URI: https://github.com/mishterk/pdk-breakdance-custom-elements
+ * Plugin Name: Breakdance Elements by Phil Kurth
+ * Plugin URI: https://github.com/mishterk/breakdance-elements-by-phil-kurth
  * Description: A custom element library for the Breakdance builder
  * Author: Phil Kurth
  * Author URI: https://philkurth.com.au
  * License: GPLv2
- * Text Domain: pdk-breakdance-custom-elements
+ * Text Domain: breakdance-elements-by-phil-kurth
  * Domain Path: /languages/
  * Version: 0.0.1
  */
 
-namespace PdkBreakdanceCustomElements;
+namespace BreakdanceElementsByPhilKurth;
 
 use function Breakdance\Util\getDirectoryPathRelativeToPluginFolder;
 
 add_action( 'breakdance_loaded', function () {
 	\Breakdance\ElementStudio\registerSaveLocation(
 		getDirectoryPathRelativeToPluginFolder( __DIR__ ) . '/elements',
-		'PdkBreakdanceCustomElements',
+		'BreakdanceElementsByPhilKurth',
 		'element',
-		'PDK Custom Elements',
+		'Elements by Phil Kurth',
 		false
 	);
 
 	\Breakdance\ElementStudio\registerSaveLocation(
 		getDirectoryPathRelativeToPluginFolder( __DIR__ ) . '/macros',
-		'PdkBreakdanceCustomElements',
+		'BreakdanceElementsByPhilKurth',
 		'macro',
-		'PDK Custom Macros',
+		'Macros by Phil Kurth',
 		false,
 	);
 
 	\Breakdance\ElementStudio\registerSaveLocation(
 		getDirectoryPathRelativeToPluginFolder( __DIR__ ) . '/presets',
-		'PdkBreakdanceCustomElements',
+		'BreakdanceElementsByPhilKurth',
 		'preset',
-		'PDK Custom Presets',
+		'Presets by Phil Kurth',
 		false,
 	);
 },
